@@ -1,0 +1,12 @@
+{
+  "name": "secure-auth/core-php-auth",
+  "description": "Production-style authentication system built with core PHP, MySQL, and PHPMailer.",
+  "type": "project",
+  "require": {
+    "php": ">=8.1",
+    "phpmailer/phpmailer": "^6.9"
+  },
+  "config": {
+    "sort-packages": true
+  }
+}

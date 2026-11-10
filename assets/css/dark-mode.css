@@ -1,0 +1,390 @@
+
+/* Body */
+body.dark-mode {
+    background: conic-gradient(from 90deg,#021f23 0deg,#0b2e28 90deg,#1c3d2c 180deg,#3d4a2f 270deg,#5c5a2e 360deg);
+}
+/* Cards & Containers */
+body.dark-mode .card,
+body.dark-mode .stat-card,
+body.dark-mode .navbar,
+body.dark-mode footer,
+body.dark-mode .dropdown-menu {
+    background: #2d3748;
+}
+
+body.dark-mode .card-header {
+    border-bottom-color: #4a5568;
+}
+
+body.dark-mode .card-title {
+    color: #9f7aea;
+}
+
+/* Buttons */
+body.dark-mode .btn-primary {
+    background: linear-gradient(135deg, #5a67d8, #6b46c1);
+}
+
+body.dark-mode .btn-light {
+    background: #4a5568;
+    color: #e2e8f0;
+    border-color: #718096;
+}
+
+body.dark-mode .btn-light:hover {
+    background: #5a67d8;
+    color: white;
+}
+
+body.dark-mode .btn-secondary {
+    background: #4a5568;
+    color: #e2e8f0;
+}
+
+/* Form Elements */
+body.dark-mode .form-label {
+    color: #e2e8f0;
+}
+
+body.dark-mode .form-control,
+body.dark-mode input,
+body.dark-mode select,
+body.dark-mode textarea {
+    background: #4a5568;
+    border-color: #718096;
+    color: #f7fafc;
+}
+
+body.dark-mode .form-control:focus,
+body.dark-mode input:focus,
+body.dark-mode select:focus,
+body.dark-mode textarea:focus {
+    border-color: #9f7aea;
+    box-shadow: 0 0 0 3px rgba(159, 122, 234, 0.1);
+}
+
+/* Tables */
+body.dark-mode .table th {
+    background: #4a5568;
+    color: #f7fafc;
+}
+
+body.dark-mode .table td {
+    border-bottom-color: #4a5568;
+    color: #e2e8f0;
+}
+
+body.dark-mode .table th,
+body.dark-mode .table td {
+    border-bottom: 1px solid #4a5568;
+}
+
+body.dark-mode .table tr:hover {
+    background: #4a5568;
+}
+
+/* Badges */
+body.dark-mode .badge-success {
+    background: #22543d;
+    color: #c6f6d5;
+}
+
+body.dark-mode .badge-warning {
+    background: #7b341e;
+    color: #feebc8;
+}
+
+body.dark-mode .badge-danger {
+    background: #742a2a;
+    color: #fed7d7;
+}
+
+body.dark-mode .badge-info {
+    background: #2c5282;
+    color: #bee3f8;
+}
+
+/* Alerts */
+body.dark-mode .alert-success {
+    background: #22543d;
+    color: #c6f6d5;
+}
+
+body.dark-mode .alert-danger {
+    background: #742a2a;
+    color: #fed7d7;
+}
+
+body.dark-mode .alert-warning {
+    background: #7b341e;
+    color: #feebc8;
+}
+
+body.dark-mode .alert-info {
+    background: #2c5282;
+    color: #bee3f8;
+}
+
+/* Info Box */
+body.dark-mode .info-box {
+    background: #4a5568;
+    color: #e2e8f0;
+}
+
+/* Stat Cards */
+body.dark-mode .stat-card {
+    background: #2d3748;
+}
+
+body.dark-mode .stat-number {
+    color: #f7fafc;
+}
+
+body.dark-mode .stat-info h3 {
+    color: #a0aec0;
+}
+
+body.dark-mode .stat-icon {
+    background: linear-gradient(135deg, #5a67d8, #6b46c1);
+}
+
+/* Logo */
+body.dark-mode .logo h2 {
+    background: linear-gradient(135deg, #9f7aea, #b794f4);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/* Token Display */
+body.dark-mode .token-number {
+    background: linear-gradient(135deg, #9f7aea, #b794f4);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/* Timer */
+body.dark-mode .timer {
+    color: #9f7aea;
+}
+
+/* Navigation */
+body.dark-mode .nav-links a {
+    color: #e2e8f0;
+}
+
+body.dark-mode .nav-links a:hover,
+body.dark-mode .nav-links a.active {
+    color: #9f7aea;
+}
+
+/* Footer */
+body.dark-mode footer {
+    border-top-color: #4a5568;
+}
+
+body.dark-mode footer p {
+    color: #a0aec0;
+}
+
+/* Dropdown */
+body.dark-mode .dropdown-item {
+    color: #e2e8f0;
+}
+
+body.dark-mode .dropdown-item:hover {
+    background: #4a5568;
+    color: #9f7aea;
+}
+
+body.dark-mode .dropdown-divider {
+    background: #4a5568;
+}
+
+/* User Info */
+body.dark-mode .user-info {
+    border-bottom-color: #4a5568;
+}
+
+body.dark-mode .user-name {
+    color: #f7fafc;
+}
+
+/* Toast Notifications */
+body.dark-mode .toast-notification {
+    background: #2d3748;
+    color: #e2e8f0;
+}
+
+body.dark-mode .toast-message {
+    color: #e2e8f0;
+}
+
+/* Scrollbar - All Browsers */
+body.dark-mode::-webkit-scrollbar-track {
+    background: #2d3748;
+}
+
+body.dark-mode::-webkit-scrollbar-thumb {
+    background: #4a5568;
+    border-radius: 5px;
+}
+
+body.dark-mode::-webkit-scrollbar-thumb:hover {
+    background: #667eea;
+}
+
+/* Firefox */
+body.dark-mode {
+    scrollbar-width: thin;
+    scrollbar-color: #4a5568 #2d3748;
+}
+
+/* Selection Color */
+body.dark-mode::selection {
+    background: #667eea;
+    color: white;
+}
+
+body.dark-mode::-moz-selection {
+    background: #667eea;
+    color: white;
+}
+
+/* Dark Mode Toggle Button */
+body.dark-mode #darkModeToggle {
+    color: #e2e8f0;
+}
+
+body.dark-mode #darkModeToggle:hover {
+    background: rgba(159, 122, 234, 0.2);
+    color: #9f7aea;
+}
+
+/* Link Light Class */
+body.dark-mode .link-light {
+    color: #9f7aea;
+}
+
+body.dark-mode .link-light:hover {
+    color: #b794f4;
+    text-decoration: underline;
+}
+
+#darkModeToggle {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 1.2rem;
+    padding: 0.5rem;
+    color: #4a5568;
+    transition: all 0.3s;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#darkModeToggle:hover {
+    background: rgba(102, 126, 234, 0.1);
+    color: var(--primary);
+    transform: scale(1.1);
+}
+
+
+/* all pages css*/
+
+   body.dark-mode .navbar {
+            background: #2d3748;
+        }
+        body.dark-mode .logo h2 {
+            background: linear-gradient(135deg, #9f7aea, #b794f4);
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        
+        body.dark-mode .nav-links a:hover, body.dark-mode .nav-links a.active {
+            color: #9f7aea;
+        }
+        body.dark-mode .nav-links a {
+            color: #e2e8f0;
+        }
+        body.dark-mode .dropdown-menu {
+            background: #2d3748;
+        }
+        body.dark-mode .dropdown-item {
+            color: #e2e8f0;
+        }
+        body.dark-mode .dropdown-item:hover {
+            background: #4a5568;
+            color: #9f7aea;
+        }
+        body.dark-mode .dropdown-divider {
+            background: #4a5568;
+        }
+         body.dark-mode .user-info {
+            border-bottom-color: #4a5568;
+        }
+        body.dark-mode .user-name {
+            color: #f7fafc;
+        }
+        body.dark-mode .user-role {
+            color: #a0aec0;
+        }
+         body.dark-mode .card {
+            background: #2d3748;
+        }
+         body.dark-mode .card-header {
+            border-bottom-color: #4a5568;
+        }
+         body.dark-mode .card-title {
+            color: #9f7aea;
+        }
+
+        body.dark-mode .form-label {
+            color: #e2e8f0;
+        }
+        body.dark-mode .form-control {
+            background: #4a5568;
+            border-color: #718096;
+            color: #f7fafc;
+        }
+        body.dark-mode .stat-card {
+            background: #2d3748;
+        }
+        body.dark-mode .stat-number {
+            color: #f7fafc;
+        }
+        body.dark-mode .table th,
+        body.dark-mode .table td {
+            border-bottom-color: #4a5568;
+        }
+        body.dark-mode .table th {
+            background: #4a5568;
+            color: #f7fafc;
+        }
+        
+        body.dark-mode .table tr:hover {
+            background: #4a5568;
+        }
+        #darkModeToggle {
+            background: none;
+            border: none;
+            cursor: pointer;
+            font-size: 1.2rem;
+            padding: 0.5rem;
+            color: #4a5568;
+            transition: all 0.3s;
+        }
+        
+        body.dark-mode #darkModeToggle {
+            color: #e2e8f0;
+        }
+        
+        #darkModeToggle:hover {
+            color: #667eea;
+            transform: scale(1.1);
+        }

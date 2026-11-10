@@ -1,0 +1,5 @@
+.git
+.DS_Store
+composer.phar
+*.sql
+*.md
