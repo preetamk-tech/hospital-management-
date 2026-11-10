@@ -42,17 +42,26 @@ try {
         PDO::ATTR_EMULATE_PREPARES => false,
     ];
     
-    // Enable SSL for TiDB Cloud using the ISRG Root X1 certificate
-    $caFile = __DIR__ . '/isrgrootx1.pem';
-    if (file_exists($caFile) && (DB_PORT == '4000' || DB_HOST !== 'localhost')) {
-        $options[PDO::MYSQL_ATTR_SSL_CA] = $caFile;
+    // Enable SSL for cloud databases (like TiDB Cloud on port 4000)
+    if (DB_PORT == '4000' || DB_HOST !== 'localhost' || getenv('DB_SSL') === 'true') {
+        $possible_cas = [
+            '/etc/ssl/certs/ca-certificates.crt', // Debian/Ubuntu/Docker
+            '/etc/pki/tls/certs/ca-bundle.crt',   // CentOS/RHEL
+            '/etc/ssl/cert.pem',                   // macOS / Alpine
+        ];
+        foreach ($possible_cas as $ca) {
+            if (file_exists($ca)) {
+                $options[PDO::MYSQL_ATTR_SSL_CA] = $ca;
+                break;
+            }
+        }
         $options[PDO::MYSQL_ATTR_SSL_VERIFY_SERVER_CERT] = false;
     }
     
     $pdo = new PDO($dsn, DB_USER, DB_PASS, $options);
 } catch(PDOException $e) {
     error_log("Database connection failed: " . $e->getMessage());
-    die("Database connection failed: " . $e->getMessage());
+    die("Database connection failed: " . htmlspecialchars($e->getMessage()));
 }
 
 // Time zone
