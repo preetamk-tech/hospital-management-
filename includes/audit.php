@@ -1,5 +1,5 @@
 <?php
-require_once __DIR__ . '/config/db.php';
+require_once dirname(__DIR__) . '/config/db.php';
 
 function logAudit($action, $table_name = null, $record_id = null, $old_values = null, $new_values = null) {
     global $pdo;
