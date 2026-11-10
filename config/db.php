@@ -14,12 +14,12 @@ if (session_status() === PHP_SESSION_NONE) {
     session_start();
 }
 
-// Database configuration (Supports Render/Cloud Environment Variables or Local XAMPP fallback)
-define('DB_HOST', getenv('DB_HOST') ?: 'localhost');
-define('DB_PORT', getenv('DB_PORT') ?: '3306');
+// Database configuration (Pre-configured for TiDB Cloud & Render)
+define('DB_HOST', getenv('DB_HOST') ?: 'gateway01.ap-northeast-1.prod.aws.tidbcloud.com');
+define('DB_PORT', getenv('DB_PORT') ?: '4000');
 define('DB_NAME', getenv('DB_NAME') ?: 'hospital_queue');
-define('DB_USER', getenv('DB_USER') ?: 'root');
-define('DB_PASS', getenv('DB_PASS') !== false ? getenv('DB_PASS') : '');
+define('DB_USER', getenv('DB_USER') ?: '3esLxTPndRcafMJ.root');
+define('DB_PASS', getenv('DB_PASS') !== false ? getenv('DB_PASS') : 'Jy9tN8ZkmIr38cv2');
 define('APP_SECRET', getenv('APP_SECRET') ?: 'd6d5362021b0033237d03c2dec51b1a79e9e10f55aab6e7af30f30622bdf216d');
 
 // Site URL - Supports Render root & Localhost subfolders
